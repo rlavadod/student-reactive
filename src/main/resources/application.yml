@@ -20,6 +20,6 @@ spring:
 
 logging:
   level:
-    org.h2: DEBUG
+    org.h2: INFO
     org.springframework: INFO
-    org.springframework.r2dbc: DEBUG
+    org.springframework.r2dbc: INFO
