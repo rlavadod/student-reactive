@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 
 @Service
 @Slf4j
-public class StudenServiceImpl implements StudentService {
+public class StudentServiceImpl implements StudentService {
 
   @Autowired
   private StudentRepository repository;
