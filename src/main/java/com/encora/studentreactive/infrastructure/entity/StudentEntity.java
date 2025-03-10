@@ -1,6 +1,4 @@
-package com.encora.studentreactive.model.entity;
-
-import javax.persistence.GeneratedValue;
+package com.encora.studentreactive.infrastructure.entity;
 
 import lombok.Builder;
 import lombok.Getter;
@@ -10,6 +8,8 @@ import org.springframework.data.annotation.Transient;
 import org.springframework.data.domain.Persistable;
 import org.springframework.data.relational.core.mapping.Column;
 import org.springframework.data.relational.core.mapping.Table;
+
+import javax.persistence.GeneratedValue;
 
 @Builder
 @Getter

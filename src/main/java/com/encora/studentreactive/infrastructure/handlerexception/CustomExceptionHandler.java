@@ -1,6 +1,6 @@
-package com.encora.studentreactive.util;
+package com.encora.studentreactive.infrastructure.handlerexception;
 
-import com.encora.studentreactive.model.api.ErrorResponse;
+import com.encora.studentreactive.domain.model.ErrorResponse;
 import org.hibernate.service.spi.ServiceException;
 import org.springframework.dao.DataAccessException;
 import org.springframework.http.HttpStatus;

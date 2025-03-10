@@ -1,4 +1,4 @@
-package com.encora.studentreactive.model.api;
+package com.encora.studentreactive.domain.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonInclude;

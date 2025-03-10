@@ -1,9 +1,9 @@
-package com.encora.studentreactive.controller;
+package com.encora.studentreactive.infrastructure.controller;
 
 import java.util.Optional;
 
-import com.encora.studentreactive.model.api.Student;
-import com.encora.studentreactive.service.StudentService;
+import com.encora.studentreactive.application.services.StudentService;
+import com.encora.studentreactive.domain.model.Student;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -44,9 +44,9 @@ public class StudentController {
   @ResponseStatus(HttpStatus.OK)
   public Flux<Student> getAllStudents(@RequestParam("status") Optional<Boolean> status) {
     if (status.isPresent()) {
-      return studentService.getAllStudentsByStatus(status.get());
+      return studentService.obtainAllByStatus(status.get());
     }
-    return studentService.getAllStudents();
+    return studentService.obtainAll();
   }
 
 }

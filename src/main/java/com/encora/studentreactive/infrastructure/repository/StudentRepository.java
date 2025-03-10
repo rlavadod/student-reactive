@@ -1,6 +1,6 @@
-package com.encora.studentreactive.repository;
+package com.encora.studentreactive.infrastructure.repository;
 
-import com.encora.studentreactive.model.entity.StudentEntity;
+import com.encora.studentreactive.infrastructure.entity.StudentEntity;
 import org.springframework.data.repository.reactive.ReactiveCrudRepository;
 import org.springframework.stereotype.Repository;
 import reactor.core.publisher.Flux;
