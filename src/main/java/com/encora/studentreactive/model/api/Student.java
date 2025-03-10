@@ -1,7 +1,6 @@
 package com.encora.studentreactive.model.api;
 
 import com.encora.studentreactive.model.entity.StudentEntity;
-import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
@@ -16,7 +15,6 @@ import javax.validation.constraints.Pattern;
 @Setter
 public class Student {
 
-  @JsonProperty(access = JsonProperty.Access.READ_ONLY)
   private Long id;
   @NotBlank
   @Pattern(regexp = "^[a-zA-Z]+")
